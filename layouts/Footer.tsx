@@ -3,7 +3,7 @@ import "./tailwind.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faFacebook, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
 const links = [
   {
@@ -35,7 +35,7 @@ const links = [
 
 function Footer() {
   return (
-    <div className={"flex flex-col py-10 max-w-5xl m-auto"}>
+    <div className={"flex flex-col pb-10 pt-4 max-w-5xl m-auto"}>
       <div className={"flex justify-center gap-x-5 py-[10px]"}>
         {links.map((link) => (
           <a key={link.text} aria-label={link.ariaLabel} href={link.href} target="_blank" rel="noopener noreferrer">

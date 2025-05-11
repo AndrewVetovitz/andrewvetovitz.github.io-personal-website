@@ -1,15 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
-
 import { Link } from "../../components/Link";
 import { List } from "../../components/List";
 import { Title } from "../../components/Title";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
 export default function Page() {
   return (
     <div className="max-w-5xl mx-auto">
-      <Title>About</Title>
+      <Title className="text-3xl pt-4">About</Title>
       <p className="text-justify">
         Hi. My name is Andrew Vetovitz. I am a software engineer currently based in Cleveland, Ohio. I mainly have been
         doing frontend work, but I am looking to transition towards backend work. I like to learn about new algorithms

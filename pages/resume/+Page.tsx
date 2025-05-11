@@ -5,13 +5,13 @@ import { Title } from "../../components/Title.js";
 export default function Page() {
   return (
     <div className="max-w-5xl mx-auto">
-      <Title>Education</Title>
+      <Title className="text-3xl pt-4">Education</Title>
       <Title>
         B.S. Computer Science & Engineering at <Link href="https://www.osu.edu/">The Ohio State University</Link>
       </Title>
       <h2>August 2014 - December 2018</h2>
 
-      <Title>Languages & Technologies</Title>
+      <Title className="text-3xl pt-4">Languages & Technologies</Title>
       <List>
         <li>Java</li>
         <li>C++</li>
@@ -23,7 +23,7 @@ export default function Page() {
         <li>CSS</li>
       </List>
 
-      <Title>Experience</Title>
+      <Title className="text-3xl pt-4">Experience</Title>
       <Title>
         Software Engineer at <Link href="https://www.meta.com/">Meta</Link> (formerly Facebook)
       </Title>
