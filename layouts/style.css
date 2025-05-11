@@ -1,0 +1,8 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Roboto Variable", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
