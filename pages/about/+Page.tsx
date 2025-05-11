@@ -11,10 +11,10 @@ export default function Page() {
     <div className="max-w-5xl mx-auto">
       <Title>About Page</Title>
       <p className="text-justify">
-        Hi. My name is Andrew Vetovitz. I am a software engineer currently located in Cleveland, Ohio. I mainly have
-        been doing frontend work, but I am looking to transition towards backend work. I like to learn about new
-        algorithms and build projects that interest me when I find the time. Otherwise, in my free time, I like to
-        disconnect and either exercise or take a walk, but I am happy to continue learning math and science.
+        Hi. My name is Andrew Vetovitz. I am a software engineer currently based in Cleveland, Ohio. I mainly have been
+        doing frontend work, but I am looking to transition towards backend work. I like to learn about new algorithms
+        and build projects that interest me when I find the time. Otherwise, in my free time, I like to disconnect and
+        either exercise or take a walk, but I am happy to continue learning math and science.
       </p>
 
       <div className="flex flex-row">

@@ -8,7 +8,6 @@ export default function HeadDefault() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com/" crossOrigin="" />
       <link rel="preconnect" href="https://res.cloudinary.com/" crossOrigin="" />
 
       {/* <!--Icon--> */}

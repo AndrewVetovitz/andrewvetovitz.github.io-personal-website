@@ -1,6 +1,10 @@
 import { Link } from "../../components/Link";
 import { Title } from "../../components/Title";
 
+function Break() {
+  return <hr className={"border-[#e8e7e7]"} />;
+}
+
 export default function Page() {
   return (
     <>
@@ -25,7 +29,7 @@ export default function Page() {
 
       {/* Projects Section */}
       <section id="projects">
-        <hr />
+        <Break />
         <section className="max-w-5xl mx-auto pb-12" id="quad-tree">
           <div>
             <Title>Quad Tree Imaging V2</Title>
@@ -39,7 +43,7 @@ export default function Page() {
           Links: <Link href="https://github.com/AndrewVetovitz/Quad-Tree-Imaging-2">Github</Link>
         </section>
 
-        <hr />
+        <Break />
         <section className="max-w-5xl mx-auto" id="quad-tree-depreciated">
           <div>
             <Title>Quad Tree Imaging V1 (Depreciated)</Title>

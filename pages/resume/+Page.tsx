@@ -80,7 +80,7 @@ export default function Page() {
       </List>
 
       <Title>
-        Computer Science & Teaching Assistant at <Link href="https://www.osu.edu/">The Ohio State University</Link>
+        Computer Science Teaching Assistant at <Link href="https://www.osu.edu/">The Ohio State University</Link>
       </Title>
       <h2>January 2017 - May 2018</h2>
       <List>

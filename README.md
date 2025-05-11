@@ -1,5 +1,5 @@
 About
-Personal website built use react and vike(vite ssr)
+Personal website V3 built use react and vike(vite ssr)
 
 Building and Deployment
 For server deployment run 'npm run build' which will optimize the build bundle and add CNAME to the dist directory
