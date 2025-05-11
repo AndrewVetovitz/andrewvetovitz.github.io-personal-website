@@ -1,11 +1,14 @@
-import { usePageContext } from "vike-react/usePageContext";
-
-export function Link({ href, children }: { href: string; children: string }) {
-  const pageContext = usePageContext();
-  const { urlPathname } = pageContext;
-  const isActive = href === "/" ? urlPathname === href : urlPathname.startsWith(href);
+export function Link({
+  href,
+  children,
+  overrideClassName,
+}: {
+  href: string;
+  children: string;
+  overrideClassName?: string;
+}) {
   return (
-    <a href={href} className={isActive ? "is-active" : undefined}>
+    <a href={href} className={overrideClassName ?? "text-blue-600 dark:text-blue-500 hover:underline"}>
       {children}
     </a>
   );
