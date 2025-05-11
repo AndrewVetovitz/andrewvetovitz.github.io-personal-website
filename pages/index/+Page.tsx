@@ -28,7 +28,7 @@ export default function Page() {
         <hr />
         <section className="max-w-5xl mx-auto pb-12" id="quad-tree">
           <div>
-            <Title>Quad Tree Imaging</Title>
+            <Title>Quad Tree Imaging V2</Title>
           </div>
           <div>
             <Title>Divide Images to create artwork</Title>
@@ -42,7 +42,7 @@ export default function Page() {
         <hr />
         <section className="max-w-5xl mx-auto" id="quad-tree-depreciated">
           <div>
-            <Title>Quad Tree Imaging (Depreciated)</Title>
+            <Title>Quad Tree Imaging V1 (Depreciated)</Title>
           </div>
           <div>
             <Title>Divide Images to create artwork</Title>
