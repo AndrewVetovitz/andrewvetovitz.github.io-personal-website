@@ -9,7 +9,7 @@ import { Title } from "../../components/Title";
 export default function Page() {
   return (
     <div className="max-w-5xl mx-auto">
-      <Title>About Page</Title>
+      <Title>About</Title>
       <p className="text-justify">
         Hi. My name is Andrew Vetovitz. I am a software engineer currently based in Cleveland, Ohio. I mainly have been
         doing frontend work, but I am looking to transition towards backend work. I like to learn about new algorithms
