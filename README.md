@@ -15,4 +15,3 @@ Tools:
 
 CDN's
 - Uses Cloudinary CDN to host some of the images
-
