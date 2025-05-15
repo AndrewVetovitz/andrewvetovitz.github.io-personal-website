@@ -5,7 +5,7 @@ import { Li } from "../../components/ListItem";
 import { PastDate } from "../../components/PastDate";
 import { Text } from "../../components/Text";
 
-import resume from "../../assets/resume/Vetovitz-Andrew-resume.pdf";
+import resume from "../../assets/resume/AndrewVetovitzResume.pdf";
 
 export default function Page() {
   return (
@@ -59,7 +59,7 @@ export default function Page() {
         <Li>Improved existing record classification to save company $50k per year and 62 work hours per year</Li>
         <Li>Mentored new hires and interns, integrating them into the technical and business ecosystem</Li>
         <Li>Reduced product build times from 40+ minutes to 15 minutes through optimization and bottleneck analysis</Li>
-        <Li>Integrated containerized deployments and reduce deployment time from 2 hours to 15 minutes</Li>
+        <Li>Integrated containerized deployments to reduce deployment time from 2 hours to 15 minutes</Li>
       </List>
 
       <Title>
