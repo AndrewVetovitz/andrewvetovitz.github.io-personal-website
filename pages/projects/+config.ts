@@ -1,4 +1,4 @@
-import Page from "../index/+Page.js";
+import Page from "../index/+Page";
 import { Config } from "vike/types";
 
 export default {

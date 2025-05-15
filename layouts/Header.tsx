@@ -1,19 +1,19 @@
 import "./tailwind.css";
 
-import { Link } from "../components/Link.js";
+import { Link } from "../components/Link";
 import { Title } from "../components/Title";
 
 function Header() {
   return (
-    <div className={"flex flex-col py-[10px] max-w-5xl m-auto"}>
-      <div className={"flex justify-center py-[15px]"}>
+    <div className="flex flex-col py-[10px] m-auto">
+      <div className="flex justify-center py-4">
         <Title className="text-5xl font-Allan">
           <Link href="/" overrideClassName="font-Allan">
             Andrew Vetovitz
           </Link>
         </Title>
       </div>
-      <section id="header" className={"flex justify-center gap-x-2 pb-4"}>
+      <div id="header" className="flex justify-center gap-x-2 pb-4">
         <Title className="text-2xl">
           <Link href="/projects">Projects</Link>
         </Title>
@@ -25,7 +25,7 @@ function Header() {
         <Title className="text-2xl">
           <Link href="/resume">Resume</Link>
         </Title>
-      </section>
+      </div>
     </div>
   );
 }

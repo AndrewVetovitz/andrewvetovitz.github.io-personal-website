@@ -1,9 +1,13 @@
 import "./tailwind.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
+
+import { Text } from "../components/Text";
 
 const links = [
   {
@@ -33,17 +37,44 @@ const links = [
   },
 ];
 
+const DEFAULT = -1;
+
 function Footer() {
+  const [bounceIndex, setBounceIndex] = useState(DEFAULT);
+
+  function enter(index: number) {
+    return function () {
+      setBounceIndex(index);
+    };
+  }
+
+  function exit() {
+    setBounceIndex(DEFAULT);
+  }
+
   return (
     <div className={"flex flex-col pb-10 pt-4 max-w-5xl m-auto"}>
       <div className={"flex justify-center gap-x-5 py-[10px]"}>
-        {links.map((link) => (
-          <a key={link.text} aria-label={link.ariaLabel} href={link.href} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={link.icon} size="2xl" />
-          </a>
-        ))}
+        {links.map((link, index) => {
+          const bounce = index == bounceIndex;
+
+          return (
+            <React.Fragment key={link.text}>
+              <a
+                onMouseEnter={enter(index)}
+                onMouseLeave={exit}
+                aria-label={link.ariaLabel}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={link.icon} size="2xl" bounce={bounce} />
+              </a>
+            </React.Fragment>
+          );
+        })}
       </div>
-      <div className={"flex justify-center"}>Links to me on the web :)</div>
+      <Text className="text-sm flex justify-center">Links to me on the web :)</Text>
     </div>
   );
 }

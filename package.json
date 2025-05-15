@@ -6,6 +6,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@fontsource-variable/montserrat": "^5.2.5",
+    "@fontsource-variable/roboto": "^5.2.5",
+    "@fontsource/allan": "^5.2.5",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",

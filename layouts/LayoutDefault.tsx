@@ -2,9 +2,9 @@ import "./style.css";
 
 import "./tailwind.css";
 
-import Header from "./Header.js";
-import Content from "./Content.js";
-import Footer from "./Footer.js";
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
 export default function LayoutDefault({ children }: { children: React.ReactNode }) {
   return (
