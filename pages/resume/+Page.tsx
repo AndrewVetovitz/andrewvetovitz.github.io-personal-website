@@ -42,7 +42,10 @@ export default function Page() {
         August 2021 - March 2024 <PastDate>2 year, 7 months</PastDate>
       </Title>
       <List>
-        <Li>Test</Li>
+        <Li>Reduced expense by $300 million per year by upgrading GDPR compliance</Li>
+        <Li>Lead team of 5 engineers to replace 200 files of legacy technical debt and streamline development</Li>
+        <Li>Created services to streamline Ads Platform error feedback to unblock advertisers</Li>
+        <Li>Mentored new hires and interns, integrating them into the Ads Platform ecosystem</Li>
       </List>
 
       <Title>
@@ -56,7 +59,7 @@ export default function Page() {
         <Li>Improved existing record classification to save company $50k per year and 62 work hours per year</Li>
         <Li>Mentored new hires and interns, integrating them into the technical and business ecosystem</Li>
         <Li>Reduced product build times from 40+ minutes to 15 minutes through optimization and bottleneck analysis</Li>
-        <Li>Worked to integrate containerized deployments and reduce deployment time from 2 hours to 15 minutes </Li>
+        <Li>Integrate containerized deployments and reduce deployment time from 2 hours to 15 minutes</Li>
       </List>
 
       <Title>

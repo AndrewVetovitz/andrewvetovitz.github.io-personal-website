@@ -1,4 +1,3 @@
-About
 Personal website V3 built use react and vike(vite ssr)
 
 Hosted on github pages
