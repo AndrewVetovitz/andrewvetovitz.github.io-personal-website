@@ -13,5 +13,8 @@ export default {
   title: "Andrew Vetovitz",
   description: "Andrew Vetovitz Personal Site",
 
+  // SSG
+  prerender: true,
+
   extends: vikeReact,
 } satisfies Config;

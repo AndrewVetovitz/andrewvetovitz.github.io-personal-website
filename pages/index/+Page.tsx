@@ -1,5 +1,3 @@
-import { Head } from "vike-react/Head";
-
 import { Link } from "../../components/Link";
 import { Title } from "../../components/Title";
 import { Text } from "../../components/Text";
@@ -15,16 +13,6 @@ function Break() {
 export default function Page() {
   return (
     <>
-      <Head>
-        <meta
-          name="description"
-          content="Projects Page For Andrew Vetovitz describing his past projects and personal works"
-        />
-        <meta
-          property="og:description"
-          content="Projects Page For Andrew Vetovitz describing his past projects and personal works"
-        />
-      </Head>
       <div className="max-w-5xl mx-auto">
         <div>
           <Title className="text-3xl pt-4">Projects</Title>
