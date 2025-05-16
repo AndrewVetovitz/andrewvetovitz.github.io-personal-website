@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "vike dev",
-    "build": "vike build && echo \"andrewvetovitz.com\" > dist/CNAME",
+    "build": "vike build",
     "preview": "vike preview",
     "lint": "eslint ."
   },
