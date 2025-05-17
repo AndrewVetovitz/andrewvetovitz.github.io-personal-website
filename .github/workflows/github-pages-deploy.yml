@@ -43,7 +43,7 @@ jobs:
       - name: Checkout Quad-Tree # TODO make this parallel once we add more static pages
         uses: ./.github/actions/checkout-and-build
         with:
-          repo: AndrewVetovitz/Quad-Tree-Imaging-2
+          repository: AndrewVetovitz/Quad-Tree-Imaging-2
           branch: main
           output-name: quad-tree-dist
       - name: check directory
