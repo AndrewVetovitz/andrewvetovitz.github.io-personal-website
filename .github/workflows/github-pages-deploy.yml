@@ -29,6 +29,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Checkout Quad-Tree
+        uses: actions/checkout@v4
+        with:
+          repository: AndrewVetovitz/Quad-Tree-Imaging-2
+          path: quad-tree
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -40,13 +45,13 @@ jobs:
         run: npm run build
       - name: Create static directory
         run: mkdir -p "./dist/client/static/"
-      - name: Checkout Quad-Tree # TODO make this parallel once we add more static pages
-        uses: ./.github/actions/checkout-and-build
-        with:
-          repository: AndrewVetovitz/Quad-Tree-Imaging-2
-          branch: main
-          build_directory: ./quad-tree-frontend
-          output-name: quad-tree-dist
+      # - name: Checkout Quad-Tree # TODO make this parallel once we add more static pages
+      #   uses: ./.github/actions/checkout-and-build
+      #   with:
+      #     repository: AndrewVetovitz/Quad-Tree-Imaging-2
+      #     branch: main
+      #     build_directory: ./quad-tree-frontend
+      #     output-name: quad-tree-dist
       - name: check directory
         run: ls
       # - name: Setup Pages
