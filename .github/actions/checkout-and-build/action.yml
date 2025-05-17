@@ -29,6 +29,9 @@ runs:
       with:
         node-version: lts/*
         cache: "npm"
+    - name: Print directories
+      shell: bash
+      run: ls
     - name: Install dependencies
       shell: bash
       run: npm ci
@@ -38,4 +41,4 @@ runs:
     - name: Rename direcotry
       shell: bash
       id: output
-      run: mv ./build ./{{ inputs.output-name }}
+      run: mv "./build" "./{{ inputs.output-name }}"
