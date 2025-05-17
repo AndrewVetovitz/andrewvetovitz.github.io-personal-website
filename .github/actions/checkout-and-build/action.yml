@@ -42,6 +42,13 @@ runs:
       working-directory: ${{ inputs.build_directory }}
       shell: bash
       run: npm run build
+    - name: print directory
+      shell: bash
+      run: ls
+    - name: print directory
+      working-directory: ${{ inputs.build_directory }}
+      shell: bash
+      run: ls
     - name: Rename direcotry
       working-directory: ${{ inputs.build_directory }}
       shell: bash
