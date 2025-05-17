@@ -43,3 +43,4 @@ runs:
       working-directory: ${{ inputs.build_directory }}
       shell: bash
       run: npm run build
+
