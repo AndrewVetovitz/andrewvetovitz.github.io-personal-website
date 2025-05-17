@@ -29,11 +29,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Checkout Quad-Tree
-        uses: actions/checkout@v4
-        with:
-          repository: AndrewVetovitz/Quad-Tree-Imaging-2
-          path: quad-tree
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -45,6 +40,18 @@ jobs:
         run: npm run build
       - name: Create static directory
         run: mkdir -p "./dist/client/static/"
+        # quad tree
+      - name: Checkout Quad-Tree
+        uses: actions/checkout@v4
+        with:
+          repository: AndrewVetovitz/Quad-Tree-Imaging-2
+          path: quad-tree
+      - name: Install dependencies
+        run: npm ci
+        working-directory: quad-tree/quad-tree-frontend
+      - name: Build
+        run: npm run build
+        working-directory: quad-tree/quad-tree-frontend
       # - name: Checkout Quad-Tree # TODO make this parallel once we add more static pages
       #   uses: ./.github/actions/checkout-and-build
       #   with:
@@ -53,7 +60,7 @@ jobs:
       #     build_directory: ./quad-tree-frontend
       #     output-name: quad-tree-dist
       - name: check directory
-        run: ls
+        run: ls && cd quad-tree/quad-tree-frontend && ls
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
       # - name: Upload artifact
