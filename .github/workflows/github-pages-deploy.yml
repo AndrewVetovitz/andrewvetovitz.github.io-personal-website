@@ -46,10 +46,10 @@ jobs:
         with:
           repository: AndrewVetovitz/Quad-Tree-Imaging-2
           path: quad-tree
-      - name: Install dependencies
+      - name: Install Quad Tree dependencies
         run: npm ci
         working-directory: quad-tree/quad-tree-frontend
-      - name: Build
+      - name: Build Quad Tree
         run: npm run build
         working-directory: quad-tree/quad-tree-frontend
       # normal build
