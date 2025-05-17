@@ -48,13 +48,13 @@ jobs:
           path: quad-tree
       - name: Install Quad Tree dependencies
         run: npm ci
-        working-directory: quad-tree/quad-tree-frontend
+        working-directory: quad-tree
       - name: Build Quad Tree
         run: npm run build
-        working-directory: quad-tree/quad-tree-frontend
+        working-directory: quad-tree
       # normal build
       - name: Copy Quad Tree to main project
-        run: cp -r quad-tree/quad-tree-frontend/dist/client/* dist/client/static/quad-tree/
+        run: cp -r quad-tree/dist/client/* dist/client/static/quad-tree/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
