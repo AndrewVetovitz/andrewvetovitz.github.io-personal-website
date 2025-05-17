@@ -24,14 +24,14 @@ runs:
       with:
         repository: ${{ inputs.repository }}
         ref: ${{ inputs.branch }}
-    - name: Print directories
+    - name: go into directory
       shell: bash
-      run: ls
+      run: cd quad-tree-frontend
     - name: Set up Node
       uses: actions/setup-node@v4
       with:
         node-version: lts/*
-        # cache: "npm"
+        cache: "npm"
     - name: Print directories
       shell: bash
       run: ls
