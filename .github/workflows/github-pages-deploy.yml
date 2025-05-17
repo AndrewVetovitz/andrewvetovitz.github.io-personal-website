@@ -39,7 +39,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Create static directory
-        run: mkdir -p "./dist/client/static/"
+        run: mkdir -p "./dist/client/static/quad-tree"
         # quad tree
       - name: Checkout Quad-Tree
         uses: actions/checkout@v4
@@ -52,15 +52,11 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: quad-tree/quad-tree-frontend
-      # - name: Checkout Quad-Tree # TODO make this parallel once we add more static pages
-      #   uses: ./.github/actions/checkout-and-build
-      #   with:
-      #     repository: AndrewVetovitz/Quad-Tree-Imaging-2
-      #     branch: main
-      #     build_directory: ./quad-tree-frontend
-      #     output-name: quad-tree-dist
+      # normal build
+      - name: Copy Quad Tree to main project
+        run: cp -r "./quad-tree/quad-tree-frontend/dist/*" "./dist/client/static/quad-tree/"
       - name: check directory
-        run: ls && cd quad-tree/quad-tree-frontend && ls
+        run: ls && ls quad-tree/quad-tree-frontend && ls dist/client/static/quad-tree
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
       # - name: Upload artifact
