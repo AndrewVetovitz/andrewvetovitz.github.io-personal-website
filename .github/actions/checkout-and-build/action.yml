@@ -19,7 +19,7 @@ inputs:
 outputs:
   dist:
     description: "build dist"
-    value: ${{ steps.output.outputs }}
+    value: ${{ steps.output.outputs.${{ inputs.output-name }} }}
 runs:
   using: "composite"
   steps:
