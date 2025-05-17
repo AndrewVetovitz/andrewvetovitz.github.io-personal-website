@@ -8,6 +8,10 @@ inputs:
     description: "Branch to download"
     required: false
     default: main
+  build_directory: # directory to build
+    description: "Directory to download"
+    required: false
+    default: "./"
   output-name: # output directory name
     description: "Name of output directory"
     required: false
@@ -26,7 +30,10 @@ runs:
         ref: ${{ inputs.branch }}
     - name: go into directory
       shell: bash
-      run: cd quad-tree-frontend
+      run: cd {{ inputs.build_directory }}
+    - name: Print directories
+      shell: bash
+      run: ls
     - name: Set up Node
       uses: actions/setup-node@v4
       with:

@@ -45,6 +45,7 @@ jobs:
         with:
           repository: AndrewVetovitz/Quad-Tree-Imaging-2
           branch: main
+          build_directory: ./quad-tree-frontend
           output-name: quad-tree-dist
       - name: check directory
         run: ls
