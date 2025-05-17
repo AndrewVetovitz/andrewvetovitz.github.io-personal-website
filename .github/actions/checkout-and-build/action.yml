@@ -19,7 +19,7 @@ inputs:
 outputs:
   dist:
     description: "build dist"
-    value: ${{ steps.output.outputs.${{ inputs.output-name }} }}
+    value: ${{ steps.build-step }}
 runs:
   using: "composite"
   steps:
@@ -44,13 +44,5 @@ runs:
       run: npm run build
     - name: print directory
       shell: bash
+      id: build-step
       run: ls
-    - name: print directory
-      working-directory: ${{ inputs.build_directory }}
-      shell: bash
-      run: ls
-    - name: Rename direcotry
-      working-directory: ${{ inputs.build_directory }}
-      shell: bash
-      id: output
-      run: mv "./dist" "${{ inputs.output-name }}"
