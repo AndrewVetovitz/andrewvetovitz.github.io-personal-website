@@ -26,6 +26,7 @@ runs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
+        clean: false
         repository: ${{ inputs.repository }}
         ref: ${{ inputs.branch }}
     - name: Set up Node
