@@ -54,7 +54,7 @@ jobs:
         working-directory: quad-tree/quad-tree-frontend
       # normal build
       - name: Copy Quad Tree to main project
-        run: cp -r quad-tree/quad-tree-frontend/dist/* dist/client/static/quad-tree/
+        run: cp -r quad-tree/quad-tree-frontend/dist/client/* dist/client/static/quad-tree/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
