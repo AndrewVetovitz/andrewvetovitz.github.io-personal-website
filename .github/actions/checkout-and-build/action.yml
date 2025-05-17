@@ -28,27 +28,22 @@ runs:
       with:
         repository: ${{ inputs.repository }}
         ref: ${{ inputs.branch }}
-    - name: go into directory
-      shell: bash
-      run: cd ${{ inputs.build_directory }}
-    - name: Print directories
-      shell: bash
-      run: ls
     - name: Set up Node
+      working-directory: ${{ inputs.build_directory }}
       uses: actions/setup-node@v4
       with:
         node-version: lts/*
         cache: "npm"
-    - name: Print directories
-      shell: bash
-      run: ls
     - name: Install dependencies
+      working-directory: ${{ inputs.build_directory }}
       shell: bash
       run: npm ci
     - name: Build
+      working-directory: ${{ inputs.build_directory }}
       shell: bash
       run: npm run build
     - name: Rename direcotry
+      working-directory: ${{ inputs.build_directory }}
       shell: bash
       id: output
       run: mv "./build" "./${{ inputs.output-name }}"
