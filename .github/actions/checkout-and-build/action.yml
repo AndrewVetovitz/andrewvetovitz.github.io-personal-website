@@ -29,11 +29,11 @@ runs:
         repository: ${{ inputs.repository }}
         ref: ${{ inputs.branch }}
     - name: Set up Node
-      working-directory: ${{ inputs.build_directory }}
       uses: actions/setup-node@v4
       with:
         node-version: lts/*
-        cache: "npm"
+        # cache: "npm"
+        # cache-dependency-path: ${{ inputs.build_directory }}
     - name: Install dependencies
       working-directory: ${{ inputs.build_directory }}
       shell: bash
