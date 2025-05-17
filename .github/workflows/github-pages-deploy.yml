@@ -53,8 +53,8 @@ jobs:
         run: npm run build
         working-directory: quad-tree/quad-tree-frontend
       # normal build
-      # - name: Copy Quad Tree to main project
-      #   run: cp -r "./quad-tree/quad-tree-frontend/dist/*" "./dist/client/static/quad-tree/"
+      - name: Copy Quad Tree to main project
+        run: cp -r quad-tree/quad-tree-frontend/dist/* dist/client/static/quad-tree/
       - name: check directory
         run: ls && echo '\n' && ls quad-tree/quad-tree-frontend && echo '\n' && ls dist/client/static/quad-tree && echo '\n' && ls quad-tree/quad-tree-frontend/dist
       # - name: Setup Pages
