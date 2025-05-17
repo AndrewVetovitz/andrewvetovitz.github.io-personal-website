@@ -30,9 +30,12 @@ runs:
         node-version: lts/*
         cache: "npm"
     - name: Install dependencies
+      shell: bash
       run: npm ci
     - name: Build
+      shell: bash
       run: npm run build
     - name: Rename direcotry
+      shell: bash
       id: output
       run: mv ./build ./{{ inputs.output-name }}

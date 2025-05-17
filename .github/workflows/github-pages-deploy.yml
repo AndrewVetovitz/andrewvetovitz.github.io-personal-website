@@ -40,7 +40,7 @@ jobs:
         run: npm run build
       - name: Create static directory
         run: mkdir -p "./dist/client/static/"
-      - name: Checkout Quad Quad-Tree # TODO make this parallel once we add more static pages
+      - name: Checkout Quad-Tree # TODO make this parallel once we add more static pages
         uses: ./.github/actions/checkout-and-build
         with:
           repo: AndrewVetovitz/Quad-Tree-Imaging-2
