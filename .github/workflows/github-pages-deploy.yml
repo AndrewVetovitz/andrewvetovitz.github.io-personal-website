@@ -21,7 +21,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -39,13 +38,23 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Create static directory
+        run: mkdir -p "./dist/client/static/"
+      - name: Checkout Quad Quad-Tree # TODO make this parallel once we add more static pages
+        run: ./.github/actions/checkout-and-build
         with:
-          # Upload dist folder
-          path: "./dist/client"
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          repo: AndrewVetovitz/Quad-Tree-Imaging-2
+          branch: main
+          output-name: quad-tree-dist
+      - name: check directory
+        run: ls
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     # Upload dist folder
+      #     path: "./dist/client"
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4

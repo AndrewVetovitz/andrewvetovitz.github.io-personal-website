@@ -1,0 +1,38 @@
+name: "Download and build npm project"
+description: "Downloads and builds npm project"
+inputs:
+  repository: # repo
+    description: "Repository to download"
+    required: true
+  branch: # branch
+    description: "Branch to download"
+    required: false
+    default: main
+  output-name: # output directory name
+    description: "Name of output directory"
+    required: false
+    default: dist
+outputs:
+  dist:
+    description: "build dist"
+    value: ${{ steps.output.outputs }}
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ inputs.repository }}
+        ref: ${{ inputs.branch }}
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        cache: "npm"
+    - name: Install dependencies
+      run: npm ci
+    - name: Build
+      run: npm run build
+    - name: Rename direcotry
+      id: output
+      run: mv ./build ./{{ inputs.output-name }}
