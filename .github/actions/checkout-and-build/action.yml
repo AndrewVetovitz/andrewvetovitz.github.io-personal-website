@@ -53,4 +53,4 @@ runs:
       working-directory: ${{ inputs.build_directory }}
       shell: bash
       id: output
-      run: mv "${{ inputs.build_directory }}/dist" "${{ inputs.build_directory }}/${{ inputs.output-name }}"
+      run: mv "./dist" "${{ inputs.output-name }}"
