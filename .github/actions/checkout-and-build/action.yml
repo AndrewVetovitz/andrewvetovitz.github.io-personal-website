@@ -30,7 +30,7 @@ runs:
         ref: ${{ inputs.branch }}
     - name: go into directory
       shell: bash
-      run: cd {{ inputs.build_directory }}
+      run: cd ${{ inputs.build_directory }}
     - name: Print directories
       shell: bash
       run: ls
@@ -51,4 +51,4 @@ runs:
     - name: Rename direcotry
       shell: bash
       id: output
-      run: mv "./build" "./{{ inputs.output-name }}"
+      run: mv "./build" "./${{ inputs.output-name }}"
