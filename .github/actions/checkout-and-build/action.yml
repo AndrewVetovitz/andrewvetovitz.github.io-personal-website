@@ -16,10 +16,10 @@ inputs:
     description: "Name of output directory"
     required: false
     default: dist
-outputs:
-  dist:
-    description: "build dist"
-    value: ${{ steps.build-step }}
+# outputs:
+# pleaseakkk:
+#   description: "build dist"
+#   value: ${{ steps.build-step }}
 runs:
   using: "composite"
   steps:
@@ -40,6 +40,5 @@ runs:
       run: npm ci
     - name: Build
       working-directory: ${{ inputs.build_directory }}
-      id: build-step
       shell: bash
       run: npm run build
