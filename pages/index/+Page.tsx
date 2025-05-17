@@ -57,8 +57,8 @@ export default function Page() {
               (because I needed an excuse to learn WASM).
             </Text>
             <Text className="py-2 text-[18px]">
-              You can check out the project in the below <Link href="">Link</Link>. It has more features and
-              customization than Michael&apos;s version.
+              You can check out the project in the below <Link href="/static/quad-tree">Link</Link>. It has more
+              features and customization than Michael&apos;s version.
             </Text>
           </>
           <div className="text-lg pb-[10px]">
