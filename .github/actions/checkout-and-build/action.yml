@@ -40,9 +40,6 @@ runs:
       run: npm ci
     - name: Build
       working-directory: ${{ inputs.build_directory }}
+      id: build-step
       shell: bash
       run: npm run build
-    - name: print directory
-      shell: bash
-      id: build-step
-      run: ls
