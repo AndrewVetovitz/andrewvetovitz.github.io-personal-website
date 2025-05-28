@@ -12,11 +12,12 @@ export default function HeadDefault() {
   return (
     <>
       {/* <!--Meta tags--> */}
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      {/* viewport gets auto injected */}
       <meta charSet="utf-8" />
       <meta name="description" content="Andrew Vetovitz Personal Site" />
       <meta name="og:description" content="Andrew Vetovitz Personal Site" />
 
+      {/* cdn */}
       <link rel="preconnect" href="https://res.cloudinary.com/" crossOrigin="anonymous" />
       {/* fontsource */}
       <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossOrigin="anonymous" />
@@ -48,6 +49,10 @@ export default function HeadDefault() {
       <link
         rel="shortcut icon"
         type="image/x-icon"
+        href="https://res.cloudinary.com/dg25vxfyl/image/upload/w_32,h_32,q_20/v1515015610/website-logo_ruxkwy.png"
+      />
+      <link
+        rel="apple-touch-icon"
         href="https://res.cloudinary.com/dg25vxfyl/image/upload/w_32,h_32,q_20/v1515015610/website-logo_ruxkwy.png"
       />
     </>
