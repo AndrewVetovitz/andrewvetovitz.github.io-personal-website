@@ -1,5 +1,6 @@
 import { Link } from "../../components/Link";
 import { Title } from "../../components/Title";
+import { SubTitle } from "../../components/SubTitle";
 import { Text } from "../../components/Text";
 import { Li } from "../../components/ListItem";
 import { PastDate } from "../../components/PastDate";
@@ -14,13 +15,11 @@ export default function Page() {
   return (
     <>
       <div className="max-w-5xl mx-auto">
-        <div>
-          <Title className="text-3xl pt-4">Projects</Title>
-          <Text className="text-xl pt-2">A highlight of some of my personal projects</Text>
-        </div>
+        <Title className="text-3xl pt-4">Projects</Title>
+        <Text className="text-xl pt-2">A highlight of some of my personal projects</Text>
 
         <div className="pb-4">
-          <Title className="text-xl pt-4">Table of contents</Title>
+          <SubTitle className="text-xl pt-4">Table of contents</SubTitle>
           <ul>
             <Li>
               <Link href="#quad-tree">Quad Tree Imaging</Link>
@@ -39,9 +38,9 @@ export default function Page() {
       <div id="projects">
         <Break />
         <div className="max-w-5xl mx-auto pb-4" id="quad-tree">
-          <Title>
+          <SubTitle>
             Quad Tree Imaging (V2) <PastDate>May 2025</PastDate>
-          </Title>
+          </SubTitle>
           <Text className="text-2xl">Divide Images to create artwork</Text>
           <>
             <Text className="py-2 text-[18px]">
@@ -103,9 +102,9 @@ export default function Page() {
 
         <Break />
         <div className="max-w-5xl mx-auto pb-4" id="halite-3">
-          <Title>
+          <SubTitle>
             Halite III <PastDate>October 2018</PastDate>
-          </Title>
+          </SubTitle>
           <div className="flex lg:flex-row max-lg:flex-col">
             <div className="lg:pr-6 basis-2/3">
               <Text className="text-2xl">Create and compete against other intelligent bots</Text>
@@ -141,9 +140,9 @@ export default function Page() {
 
         <Break />
         <div className="max-w-5xl mx-auto" id="quad-tree-depreciated">
-          <Title>
+          <SubTitle>
             Quad Tree Imaging (V1) (Depreciated) <PastDate>December 2016</PastDate>
-          </Title>
+          </SubTitle>
           <Text className="text-2xl">Divide Images to create artwork</Text>
           <>
             <Text className="py-2 text-[18px]">

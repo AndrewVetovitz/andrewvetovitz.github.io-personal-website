@@ -5,6 +5,7 @@ import { List } from "../../components/List";
 import { Text } from "../../components/Text";
 import { Li } from "../../components/ListItem";
 import { Title } from "../../components/Title";
+import { SubTitle } from "../../components/SubTitle";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
 export default function Page() {
@@ -20,7 +21,7 @@ export default function Page() {
 
       <div className="flex lg:flex-row max-lg:flex-col">
         <div className="lg:basis-1/3">
-          <Title className="text-2xl pt-4 pb-2">Things I like...</Title>
+          <SubTitle className="text-2xl pt-4 pb-2">Things I like...</SubTitle>
           <List>
             <Li>Programming</Li>
             <Li>Food</Li>
@@ -32,7 +33,7 @@ export default function Page() {
         </div>
 
         <div className="lg:basis-1/3">
-          <Title className="text-2xl pt-4 pb-2">I&apos;ve worked at...</Title>
+          <SubTitle className="text-2xl pt-4 pb-2">I&apos;ve worked at...</SubTitle>
           <List>
             <Li>Meta (formerly Facebook)</Li>
             <Li>Goldman Sachs</Li>
@@ -42,7 +43,7 @@ export default function Page() {
         </div>
 
         <div className="lg:basis-1/3">
-          <Title className="text-2xl pt-4 pb-2">I&apos;ve lived in...</Title>
+          <SubTitle className="text-2xl pt-4 pb-2">I&apos;ve lived in...</SubTitle>
           <List>
             <Li>Ohio</Li>
             <Li>New York</Li>
@@ -51,9 +52,9 @@ export default function Page() {
         </div>
       </div>
 
-      <Title>
+      <SubTitle>
         Contact <FontAwesomeIcon icon={faEnvelope} size="xl" />
-      </Title>
+      </SubTitle>
       <Text className="text-[18px]">
         You can reach me by email at <Link href="mailto:andrewvetovitz@gmail.com">AndrewVetovitz@gmail.com</Link>.
       </Text>

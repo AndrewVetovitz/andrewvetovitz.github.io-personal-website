@@ -3,12 +3,22 @@ export function Link({
   children,
   overrideClassName,
   download,
+  supressDefaultStyles,
 }: {
   href: string;
   children: React.ReactNode;
   overrideClassName?: string;
   download?: string;
+  supressDefaultStyles?: boolean;
 }) {
+  if (supressDefaultStyles) {
+    return (
+      <a href={href} download={download}>
+        {children}
+      </a>
+    );
+  }
+
   return (
     <a
       href={href}
