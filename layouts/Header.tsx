@@ -1,7 +1,6 @@
 import "./tailwind.css";
 
 import { Link } from "../components/Link";
-import { Title } from "../components/Title";
 
 function Divider() {
   return <div className="text-2xl select-none"> • </div>;
