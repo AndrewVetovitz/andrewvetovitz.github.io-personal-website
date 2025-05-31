@@ -11,7 +11,8 @@ export default {
 
   // https://vike.dev/head-tags
   title: "Andrew Vetovitz",
-  description: "Andrew Vetovitz Personal Site",
+  description:
+    "Andrew Vetovitz personal website display his projects, experience, about, and a downloadable copy of his resume",
 
   // SSG
   prerender: true,

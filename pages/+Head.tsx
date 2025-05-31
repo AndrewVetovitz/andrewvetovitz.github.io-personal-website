@@ -14,8 +14,6 @@ export default function HeadDefault() {
       {/* <!--Meta tags--> */}
       {/* viewport gets auto injected */}
       <meta charSet="utf-8" />
-      <meta name="description" content="Andrew Vetovitz Personal Site" />
-      <meta name="og:description" content="Andrew Vetovitz Personal Site" />
 
       {/* cdn */}
       <link rel="preconnect" href="https://res.cloudinary.com/" crossOrigin="anonymous" />
