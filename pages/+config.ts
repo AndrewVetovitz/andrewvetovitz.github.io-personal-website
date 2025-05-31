@@ -10,7 +10,7 @@ export default {
   Layout,
 
   // https://vike.dev/head-tags
-  title: "Andrew Vetovitz",
+  title: "Andrew Vetovitz Personal Website",
   description:
     "Andrew Vetovitz personal website display his projects, experience, about, and a downloadable copy of his resume",
 
