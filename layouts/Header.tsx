@@ -16,19 +16,19 @@ function Header() {
           </Link>
         </div>
       </div>
-      <ol className="flex justify-center gap-x-2 pb-4">
-        <li className="text-2xl">
-          <Link href="/projects/">Projects</Link>
-        </li>
+      <div className="flex justify-center gap-x-2 pb-4">
+        <Link className="text-2xl" href="/projects/">
+          Projects
+        </Link>
         <Divider />
-        <li className="text-2xl">
-          <Link href="/about/">About</Link>
-        </li>
+        <Link className="text-2xl" href="/about/">
+          About
+        </Link>
         <Divider />
-        <li className="text-2xl">
-          <Link href="/resume/">Resume</Link>
-        </li>
-      </ol>
+        <Link className="text-2xl" href="/resume/">
+          Resume
+        </Link>
+      </div>
     </div>
   );
 }

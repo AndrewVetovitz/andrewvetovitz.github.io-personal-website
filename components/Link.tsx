@@ -1,15 +1,15 @@
 export function Link({
   href,
   children,
-  overrideClassName,
   download,
   supressDefaultStyles,
+  className,
 }: {
   href: string;
   children: React.ReactNode;
-  overrideClassName?: string;
   download?: string;
   supressDefaultStyles?: boolean;
+  className?: string;
 }) {
   if (supressDefaultStyles) {
     return (
@@ -23,7 +23,7 @@ export function Link({
     <a
       href={href}
       download={download}
-      className={overrideClassName ?? "text-blue-600 dark:text-blue-500 hover:underline"}
+      className={[className, "text-blue-600 dark:text-blue-500 hover:underline"].join(" ")}
     >
       {children}
     </a>
