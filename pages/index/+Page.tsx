@@ -36,6 +36,7 @@ export default function Page() {
 
       {/* Projects Section */}
       <div id="projects">
+        {/* Quad Tree */}
         <Break />
         <div className="max-w-5xl mx-auto pb-4" id="quad-tree">
           <SubTitle>
@@ -65,7 +66,6 @@ export default function Page() {
             {" • "}
             <Link href="/static/quad-tree">Website</Link>
           </div>
-          {/*  */}
           <div className="flex max-lg:justify-center max-lg:items-center max-lg:aspect-square flex-row gap-x-5">
             <SizeAwareDiv className="flex justify-center items-center aspect-square max-lg:basis-3/3 lg:basis-1/3">
               {({ height, width }) => (
@@ -100,6 +100,7 @@ export default function Page() {
           </div>
         </div>
 
+        {/* Halite 3 */}
         <Break />
         <div className="max-w-5xl mx-auto pb-4" id="halite-3">
           <SubTitle>
@@ -138,6 +139,7 @@ export default function Page() {
           </div>
         </div>
 
+        {/* Old Quad Tree Imaging */}
         <Break />
         <div className="max-w-5xl mx-auto" id="quad-tree-depreciated">
           <SubTitle>
